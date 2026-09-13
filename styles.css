@@ -71,6 +71,12 @@ h1 em, h2 em { font-weight: 500; }
 .intro-point__clarification p { color: #d2cbc0; font-size: .86rem; line-height: 1.5; margin: 0; }
 .intro-point__sources { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; margin-top: 1.6rem; }
 .intro-point__sources a { color: #f2ede4; font-size: .72rem; font-weight: 700; text-underline-offset: .25rem; }
+.intro-timeline { margin-top: 2rem; }
+.intro-timeline__title { color: #bdb6ab; font-size: .65rem; font-weight: 700; letter-spacing: .13em; margin-bottom: .75rem; text-transform: uppercase; }
+.intro-timeline ol { display: grid; gap: .7rem; grid-template-columns: repeat(3, 1fr); list-style: none; margin: 0; padding: 0; }
+.intro-timeline li { border-left: 1px solid #b36a56; display: grid; gap: .15rem; padding-left: .7rem; }
+.intro-timeline time { color: #d58b71; font-family: var(--serif); font-size: 1.1rem; }
+.intro-timeline span { color: #bdb6ab; font-size: .68rem; line-height: 1.25; }
 
 .route-intro { align-items: end; background: #e5ded2; display: grid; gap: 2rem; grid-template-columns: 1.3fr 1fr; padding: clamp(4rem, 10vw, 8rem) clamp(1.25rem, 7vw, 7rem); }
 .route-intro h2 { font-size: clamp(2.5rem, 7vw, 5.6rem); line-height: .95; margin: 0; }
@@ -92,6 +98,12 @@ h1 em, h2 em { font-weight: 500; }
 .stop h2 { color: var(--stop-ink); font-size: clamp(2.5rem, 6vw, 5.4rem); line-height: .94; margin-bottom: 1rem; }
 .stop__subtitle { color: var(--stop-accent); font-size: .76rem; font-weight: 700; letter-spacing: .04em; margin-bottom: 1.6rem; }
 .stop__description { color: var(--stop-ink); font-size: clamp(1rem, 1.7vw, 1.15rem); line-height: 1.65; }
+.stop__timeline { border-bottom: 1px solid color-mix(in srgb, var(--stop-ink) 22%, transparent); border-top: 1px solid color-mix(in srgb, var(--stop-ink) 22%, transparent); margin: 1.35rem 0; padding: .7rem 0; }
+.stop__timeline-label { color: var(--stop-accent); display: block; font-size: .62rem; font-weight: 700; letter-spacing: .13em; margin-bottom: .4rem; text-transform: uppercase; }
+.stop__timeline > div { align-items: baseline; display: flex; gap: .8rem; }
+.stop__timeline strong { color: var(--stop-accent); font-family: var(--serif); font-size: 1.45rem; font-weight: 500; white-space: nowrap; }
+.stop__timeline > div > span { color: var(--stop-ink); font-size: .78rem; line-height: 1.4; }
+.stop__timeline b { display: block; font-size: .78rem; font-weight: 700; }
 .stop__detail { background: color-mix(in srgb, var(--stop-bg) 76%, white); border-left: 3px solid var(--stop-accent); margin: 1.45rem 0; padding: 1rem 1.1rem; }
 .stop__detail strong { color: var(--stop-accent); display: block; font-size: .65rem; letter-spacing: .13em; margin-bottom: .45rem; text-transform: uppercase; }
 .stop__detail h3 { color: var(--stop-ink); font-size: 1.45rem; line-height: 1.05; margin: 0 0 .65rem; }
@@ -156,6 +168,7 @@ h1 em, h2 em { font-weight: 500; }
   .route-intro__optional { margin-top: 1.5rem; }
   .intro-point { display: block; }
   .intro-point__body { margin-top: 2rem; }
+  .intro-timeline ol { grid-template-columns: repeat(2, 1fr); }
   .stop { min-height: auto; padding-bottom: 5rem; padding-top: 5rem; }
   .stop__grid { display: flex; flex-direction: column-reverse; gap: 2.5rem; min-height: 0; }
   .stop__media { min-height: 70vw; width: calc(100% - 1rem); }

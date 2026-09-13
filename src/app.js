@@ -4,26 +4,26 @@ const STOPS = [
     shortName: "San Ildefonso", subtitle: "Universidad de Alcalá · Plaza de San Diego",
     coordinates: { lat: 40.482855, lng: -3.363075 }, duration: "10–15 min", price: "Exterior gratuito",
     description: "Comienza frente a la espectacular fachada renacentista del antiguo Colegio Mayor, núcleo histórico de la Universidad de Alcalá fundada por el cardenal Cisneros a finales del siglo XV.",
-    curiosity: "Aquí se celebra la entrega del Premio Cervantes, uno de los grandes reconocimientos de la literatura en español.",
+    curiosity: "Aquí se celebra la entrega del Premio Cervantes, uno de los grandes reconocimientos de la literatura en español.", timeline: { date: "1499", label: "Proyecto universitario", text: "Cisneros inicia el proyecto de la Universidad de Alcalá." },
     source: "https://cultura.uah.es/es/evento/Servicio-de-Visitas-Guiadas-00004/", image: "images/san-ildefonso.webp", alt: "Fachada del Colegio Mayor de San Ildefonso al atardecer"
   },
   {
     id: 2, slug: "plaza-de-cervantes", name: "Plaza de Cervantes", shortName: "Plaza de Cervantes", subtitle: "El centro del casco histórico",
     coordinates: { lat: 40.48255, lng: -3.36425 }, duration: "10–15 min", price: "Gratuita",
     description: "El gran espacio central de Alcalá funciona como transición natural entre la ciudad universitaria y el antiguo núcleo urbano. Alrededor aparecen el Ayuntamiento, el Corral de Comedias y la estatua del escritor.",
-    curiosity: "La estatua de Miguel de Cervantes preside la plaza desde el siglo XIX.", source: "https://www.turismoalcala.es/turismo/plaza-de-cervantes-alcala-de-henares/", image: "images/plaza-cervantes.webp", alt: "Estatua de Cervantes en la plaza histórica de Alcalá"
+    curiosity: "La estatua de Miguel de Cervantes preside la plaza desde el siglo XIX.", timeline: { date: "Siglos XVI–XIX", label: "Plaza cívica", text: "La plaza se consolida como espacio central de la vida urbana y comercial." }, source: "https://www.turismoalcala.es/turismo/plaza-de-cervantes-alcala-de-henares/", image: "images/plaza-cervantes.webp", alt: "Estatua de Cervantes en la plaza histórica de Alcalá"
   },
   {
     id: 3, slug: "capilla-del-oidor", name: "Capilla del Oidor", shortName: "Capilla del Oidor", subtitle: "Plaza de Rodríguez Marín",
     coordinates: { lat: 40.481703, lng: -3.363425 }, duration: "10–15 min", price: "Entrada gratuita",
     description: "Pequeña pero esencial parada cervantina. Conserva la pila bautismal vinculada al bautismo de Miguel de Cervantes y un facsímil de su partida de bautismo.",
-    curiosity: "Formaba parte de la antigua iglesia de Santa María la Mayor, gravemente destruida durante la Guerra Civil.", source: "https://www.turismoalcala.es/turismo/monumento-capilla-del-oidor/", image: "images/capilla-oidor.webp", alt: "Exterior de la Capilla del Oidor en una plaza histórica"
+    curiosity: "Formaba parte de la antigua iglesia de Santa María la Mayor, gravemente destruida durante la Guerra Civil.", timeline: { date: "Edad Media", label: "Iglesia de Santa María", text: "La capilla forma parte del conjunto de la antigua iglesia de Santa María la Mayor." }, source: "https://www.turismoalcala.es/turismo/monumento-capilla-del-oidor/", image: "images/capilla-oidor.webp", alt: "Exterior de la Capilla del Oidor en una plaza histórica"
   },
   {
     id: 4, slug: "hospital-de-antezana", name: "Hospital de Antezana", shortName: "Hospital de Antezana", subtitle: "Calle Mayor · microparada",
     coordinates: { lat: 40.48229, lng: -3.36686 }, duration: "3–5 min", price: "Exterior gratuito",
     description: "Mira hacia este edificio mientras recorres Calle Mayor bajo sus característicos soportales. Está prácticamente junto a la Casa Natal de Cervantes.",
-    curiosity: "Fue fundado en 1483 y mantiene una extraordinaria continuidad de su función asistencial a lo largo de los siglos.", source: "https://alcalafilmoffice.ayto-alcaladehenares.es/localizaciones/hospital-de-antezana/", image: "images/calle-mayor.webp", alt: "Soportales de la Calle Mayor de Alcalá de Henares",
+    curiosity: "Fue fundado en 1483 y mantiene una extraordinaria continuidad de su función asistencial a lo largo de los siglos.", timeline: { date: "1483", label: "Fundación del hospital", text: "Luis de Antezana e Isabel de Guzmán fundan el hospital en octubre de este año." }, source: "https://alcalafilmoffice.ayto-alcaladehenares.es/localizaciones/hospital-de-antezana/", image: "images/calle-mayor.webp", alt: "Soportales de la Calle Mayor de Alcalá de Henares",
     details: [
       {
         kind: "look", label: "👀 Fíjate en esto", title: "Busca las mirillas de los soportales",
@@ -43,25 +43,25 @@ const STOPS = [
     id: 5, slug: "casa-natal-de-cervantes", name: "Museo Casa Natal de Cervantes", shortName: "Casa Natal de Cervantes", subtitle: "Calle Mayor, 48",
     coordinates: { lat: 40.48225, lng: -3.36705 }, duration: "20–30 min", price: "Entrada gratuita",
     description: "El museo ocupa el emplazamiento tradicionalmente identificado con la vivienda de la familia de Miguel de Cervantes y recrea el ambiente de una casa acomodada de los siglos XVI y XVII.",
-    curiosity: "Las esculturas de Don Quijote y Sancho Panza esperan delante del museo para una de las fotos más reconocibles del paseo.", source: "https://museocasanataldecervantes.org/informacion-general/", image: "images/casa-natal.webp", alt: "Exterior de la Casa Natal de Cervantes en Calle Mayor"
+    curiosity: "Las esculturas de Don Quijote y Sancho Panza esperan delante del museo para una de las fotos más reconocibles del paseo.", timeline: { date: "1956", label: "Museo actual", text: "Se inaugura la reconstrucción que da forma al museo actual en el emplazamiento tradicional de la casa familiar." }, source: "https://museocasanataldecervantes.org/informacion-general/", image: "images/casa-natal.webp", alt: "Exterior de la Casa Natal de Cervantes en Calle Mayor"
   },
   {
     id: 6, slug: "catedral-magistral", name: "Catedral Magistral", shortName: "Catedral Magistral", subtitle: "Plaza de los Santos Niños",
     coordinates: { lat: 40.48063, lng: -3.36881 }, duration: "10–15 min", price: "Exterior gratuito",
     description: "La ruta continúa hasta la Plaza de los Santos Niños, donde la Catedral Magistral recuerda los orígenes religiosos de la ciudad medieval y la tradición del martirio de Justo y Pastor.",
-    curiosity: "El título de “Magistral” estaba relacionado con que sus canónigos fueran maestros universitarios.", source: "https://catedralmagistral.com/visita-cultural/", image: "images/catedral-magistral.webp", alt: "Fachada de la Catedral Magistral de Alcalá de Henares"
+    curiosity: "El título de “Magistral” estaba relacionado con que sus canónigos fueran maestros universitarios.", timeline: { date: "Siglos XV–XVI", label: "Templo actual", text: "Se levanta la catedral que hoy reconocemos sobre una tradición religiosa medieval." }, source: "https://catedralmagistral.com/visita-cultural/", image: "images/catedral-magistral.webp", alt: "Fachada de la Catedral Magistral de Alcalá de Henares"
   },
   {
     id: 7, slug: "palacio-arzobispal", name: "Palacio Arzobispal", shortName: "Palacio Arzobispal", subtitle: "Plaza de las Bernardas · recinto amurallado",
     coordinates: { lat: 40.48244, lng: -3.36965 }, duration: "10–15 min", price: "Exterior gratuito",
     description: "Antigua residencia de los arzobispos de Toledo y uno de los grandes centros históricos de poder de Alcalá. La plaza marca la transición hacia la muralla.",
-    curiosity: "Un enorme incendio en 1939 destruyó parte de sus dependencias y archivos. El acceso interior puede variar.", source: "https://www.turismoalcala.es/turismo/palacio-arzobispal/", image: "images/palacio-arzobispal.webp", alt: "Palacio Arzobispal junto al recinto amurallado"
+    curiosity: "Un enorme incendio en 1939 destruyó parte de sus dependencias y archivos. El acceso interior puede variar.", timeline: { date: "Siglos XIII–XVI", label: "Palacio arzobispal", text: "El complejo medieval se amplía y transforma como residencia de los arzobispos de Toledo." }, source: "https://www.turismoalcala.es/turismo/palacio-arzobispal/", image: "images/palacio-arzobispal.webp", alt: "Palacio Arzobispal junto al recinto amurallado"
   },
   {
     id: 8, slug: "puerta-de-madrid", name: "Puerta de Madrid", shortName: "Puerta de Madrid", subtitle: "Final · acceso occidental",
     coordinates: { lat: 40.480646, lng: -3.372770 }, duration: "10 min", price: "Gratuita",
     description: "El paseo termina junto al recinto amurallado. La puerta monumental del siglo XVIII cierra el recorrido después de cruzar el centro histórico de este a oeste.",
-    curiosity: "En Spartacus (1960), dirigida por Stanley Kubrick y protagonizada por Kirk Douglas, la Puerta de Madrid aparece transformada en una puerta de la Roma antigua. Varias escenas de la película se rodaron en Alcalá.", source: "https://www.turismoalcala.es/turismo/puerta-de-madrid-alcala-de-henares-y-recinto-amurallado/", sourceExtra: "https://www.eldiario.es/viajes/ciudad-historica-madrid-rodo-clasicos-hollywood-semana-santa-alcala-de-henares-pm_1_12204061.html", image: "images/puerta-madrid.webp", alt: "Puerta de Madrid al final de una calle histórica"
+    curiosity: "En Spartacus (1960), dirigida por Stanley Kubrick y protagonizada por Kirk Douglas, la Puerta de Madrid aparece transformada en una puerta de la Roma antigua. Varias escenas de la película se rodaron en Alcalá.", timeline: { date: "1788", label: "Puerta actual", text: "Se sustituye el antiguo torreón-puerta por la construcción monumental que vemos hoy, orientada hacia Madrid." }, source: "https://www.turismoalcala.es/turismo/puerta-de-madrid-alcala-de-henares-y-recinto-amurallado/", sourceExtra: "https://www.eldiario.es/viajes/ciudad-historica-madrid-rodo-clasicos-hollywood-semana-santa-alcala-de-henares-pm_1_12204061.html", image: "images/puerta-madrid.webp", alt: "Puerta de Madrid al final de una calle histórica"
   },
   {
     id: 9, slug: "museo-arqueologico", name: "Museo Arqueológico y Paleontológico", shortName: "Museo Arqueológico", subtitle: "Plaza de las Bernardas · parada opcional",
@@ -108,6 +108,7 @@ function stopTemplate(stop, index, visibleStops) {
   const next = visibleStops[index + 1];
   const isVisited = state.visited.includes(stop.id);
   const image = stop.image ? `<div class="stop__image"><img src="${stop.image}" alt="${stop.alt}" loading="lazy" width="1536" height="1024" data-parallax /></div>` : `<div class="stop__image stop__image--fallback" data-mark="${String(stop.id).padStart(2, "0")}" aria-hidden="true"></div>`;
+  const timeline = stop.timeline ? `<div class="stop__timeline"><span class="stop__timeline-label">Hito en el tiempo</span><div><strong>${stop.timeline.date}</strong><span><b>${stop.timeline.label}</b>${stop.timeline.text}</span></div></div>` : "";
   const details = (stop.details || []).map((detail) => `<aside class="stop__detail stop__detail--${detail.kind}"><strong>${detail.label}</strong><h3>${detail.title}</h3><p>${detail.text}</p><p>${detail.extra}</p>${detail.prompt ? `<p class="stop__detail-prompt">${detail.prompt}</p>` : ""}${detail.note ? `<p class="stop__detail-note">${detail.note}</p>` : ""}</aside>`).join("");
   const nextBlock = next ? `<div class="stop__next"><small>Siguiente · ${next.duration}</small><a href="#parada-${next.id}">${next.name} <span aria-hidden="true">↘</span></a></div>` : `<div class="stop__next"><small>Has llegado</small><span>Puerta de Madrid</span></div>`;
   const optionalClass = stop.optional ? " stop--optional" : "";
@@ -119,6 +120,7 @@ function stopTemplate(stop, index, visibleStops) {
         <h2>${stop.name}</h2>
         <p class="stop__subtitle">${stop.subtitle}</p>
         <p class="stop__description">${stop.description}</p>
+        ${timeline}
         ${details}
         <div class="stop__meta"><span>◷ ${stop.duration}</span><span>◌ ${stop.price}</span></div>
         <aside class="stop__curiosity"><strong>Dato curioso</strong><p>${stop.curiosity}</p></aside>

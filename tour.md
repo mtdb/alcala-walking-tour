@@ -47,6 +47,24 @@ La duración aproximada es:
 * Solo exteriores y paseo tranquilo: alrededor de 1 h 30 min – 2 h.
 * Entrando en Capilla del Oidor y Casa Natal de Cervantes: aproximadamente 2–3 h.
 
+## Hilo temporal de la visita
+
+La ruta puede leerse como una ciudad construida por capas. El Punto 0 debe presentar una línea temporal breve y cada parada puede incorporar un único bloque “Hito en el tiempo”.
+
+Cronología resumida para la interfaz:
+
+* **1483** · Fundación del Hospital de Antezana, en octubre, por Luis de Antezana e Isabel de Guzmán.
+* **1499** · El cardenal Cisneros inicia el proyecto de la Universidad de Alcalá.
+* **1508** · Comienzan los estudios del nuevo proyecto universitario.
+* **1778** · Se termina la actual Puerta de Alcalá en Madrid.
+* **1788** · Se sustituye el antiguo torreón-puerta de Alcalá por la actual Puerta de Madrid.
+* **1956** · Se inaugura la reconstrucción del museo actual en el emplazamiento tradicional de la Casa Natal de Cervantes.
+* **1998** · Alcalá entra en la lista de Patrimonio Mundial de la UNESCO.
+
+No todas las fechas tienen la misma precisión. La interfaz debe distinguir entre “fecha documentada”, “siglo o periodo aproximado”, “edificio actual” y “hito de uso”. Nunca se debe inventar una fecha de inauguración para completar la cronología.
+
+El Hospital de Antezana es deliberadamente anterior al proyecto universitario: no forma parte de su diseño fundacional, sino de la ciudad medieval preexistente sobre la que la Universidad se implantó y con la que convivió.
+
 ---
 
 # 1. Colegio Mayor de San Ildefonso
@@ -480,6 +498,12 @@ Final natural del paseo, junto al recinto amurallado.
 La actual puerta monumental fue reconstruida en el siglo XVIII como acceso occidental a Alcalá.
 
 Es un buen punto final porque el visitante ha cruzado prácticamente todo el centro histórico desde la Universidad sin necesidad de volver atrás.
+
+Conexión con la Puerta de Alcalá:
+
+La Puerta de Madrid y la Puerta de Alcalá no son dos puertas enfrentadas físicamente ni se ven una a otra. Son los nombres de los dos extremos de un mismo eje viario histórico: desde Alcalá se salía hacia Madrid y desde Madrid se tomaba el camino hacia Alcalá.
+
+La Puerta de Alcalá actual se terminó en 1778 y la Puerta de Madrid actual sustituyó al antiguo torreón de Alcalá en 1788. La relación entre ambas es, por tanto, viaria e histórica, no la de una pareja de puertas gemelas.
 
 Dato curioso:
 
@@ -1053,6 +1077,12 @@ Ejemplo de modelo:
   price: "Exterior gratuito",
   description: "...",
   curiosity: "...",
+  timeline: {
+    date: "1483",
+    label: "Fundación del hospital",
+    text: "Luis de Antezana e Isabel de Guzmán fundan el hospital en octubre de este año.",
+    precision: "documentada"
+  },
   theme: {
     background: "stone",
     accent: "burgundy"
