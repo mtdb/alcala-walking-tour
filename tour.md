@@ -468,15 +468,17 @@ La plaza y el exterior del complejo funcionan muy bien como transición entre el
 
 Dato curioso:
 
-El complejo sufrió un enorme incendio en 1939 que destruyó una parte importante de sus dependencias y archivos.
+El incendio ocurrió el **11 de agosto de 1939**, pocos meses después del final de la Guerra Civil. No fue un daño de combate: el recinto seguía ocupado por talleres militares y el fuego destruyó una parte importante de sus dependencias y archivos.
 
 Hitos en el tiempo:
 
 * **Siglo XIII** · Se construye como residencia de los arzobispos de Toledo dentro del recinto amurallado.
 * **Siglo XVI** · La antigua fortaleza se transforma en un gran palacio renacentista, con la intervención de Alonso de Covarrubias.
-* **1939** · Un incendio destruye buena parte de sus interiores y archivos.
+* **11 de agosto de 1939** · Un incendio iniciado en talleres militares, ya en la inmediata posguerra, destruye buena parte de sus interiores y archivos.
 
 Alcalá no sustituía a Toledo: su posición estratégica y su importancia política y religiosa explican que los prelados mantuvieran aquí una residencia fortificada y pasaran largas temporadas.
+
+La causa exacta del incendio no quedó completamente aclarada. La relación con la Guerra Civil es indirecta: el palacio había sido utilizado como cuartel y taller durante la contienda, y esos usos continuaron después de abril de 1939.
 
 Información práctica:
 

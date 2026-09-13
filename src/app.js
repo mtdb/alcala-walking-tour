@@ -95,10 +95,10 @@ const STOPS = [
     id: 7, slug: "palacio-arzobispal", name: "Palacio Arzobispal", shortName: "Palacio Arzobispal", subtitle: "Plaza de las Bernardas · recinto amurallado",
     coordinates: { lat: 40.48244, lng: -3.36965 }, duration: "10–15 min", price: "Exterior gratuito",
     description: "Durante siglos Alcalá perteneció a la archidiócesis de Toledo. Este palacio fue la residencia temporal de sus arzobispos y un centro de gobierno y representación, no la sede principal del arzobispado, que estaba en Toledo. La plaza marca la transición hacia la muralla.",
-    curiosity: "Un enorme incendio en 1939 destruyó parte de sus dependencias y archivos. El acceso interior puede variar.", timeline: [
+    curiosity: "El incendio ocurrió el 11 de agosto de 1939, pocos meses después del final de la Guerra Civil, y destruyó parte de sus dependencias y archivos. El acceso interior puede variar.", timeline: [
       { date: "Siglo XIII", label: "Residencia temporal", text: "Se construye para los arzobispos de Toledo dentro del recinto amurallado." },
       { date: "Siglo XVI", label: "Palacio renacentista", text: "Covarrubias y otros prelados transforman la fortaleza en un gran palacio." },
-      { date: "1939", label: "Incendio", text: "El fuego destruye buena parte de sus interiores y archivos." }
+      { date: "11 ago 1939", label: "Incendio de posguerra", text: "Un fuego iniciado en talleres militares destruye buena parte de sus interiores y archivos." }
     ], source: "https://www.turismoalcala.es/turismo/palacio-arzobispal/", image: "images/palacio-arzobispal.webp", alt: "Palacio Arzobispal junto al recinto amurallado"
   },
   {
