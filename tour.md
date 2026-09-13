@@ -24,6 +24,7 @@ Puerta de Madrid
 
 Orden recomendado:
 
+0. Introducción: Alcalá, ciudad Patrimonio Mundial
 1. Colegio Mayor de San Ildefonso
 2. Plaza de Cervantes
 3. Capilla del Oidor
@@ -649,6 +650,7 @@ Resumen:
 Aproximadamente 1,2–1,5 km
 2–3 horas
 Ruta base gratuita
+Punto 0 de introducción
 8 paradas principales
 1 parada opcional
 
@@ -661,6 +663,24 @@ También sería útil mostrar progreso:
 0 / 8 visitadas
 
 La parada del Museo Arqueológico no debe formar parte del denominador inicialmente. Si el usuario la añade al recorrido, el progreso puede pasar a mostrar 0 / 9.
+
+El punto 0 es una introducción editorial y no cuenta como parada visitable ni altera el denominador del progreso: debe mostrar siempre `0 / 8` al comenzar la ruta.
+
+## Punto 0: Alcalá, ciudad universitaria y Patrimonio Mundial
+
+Antes de la primera parada debe explicarse brevemente que Alcalá de Henares fue inscrita por la UNESCO como Patrimonio Mundial en 1998, por la importancia conjunta de su universidad y su recinto histórico.
+
+La formulación recomendada para la ciudad universitaria es:
+
+“Alcalá conserva uno de los primeros modelos europeos de ciudad universitaria planificada. La Universidad, fundada por el cardenal Cisneros a finales del siglo XV, organizó buena parte de la vida urbana alrededor del estudio, los colegios y los espacios de intercambio.”
+
+Si se utiliza la expresión “primera ciudad universitaria de Europa”, debe presentarse como una afirmación divulgativa habitual y no como una clasificación absoluta sin fuente. Es preferible hablar de “una de las primeras ciudades universitarias planificadas de Europa” o “uno de los primeros modelos de ciudad universitaria de la Edad Moderna”.
+
+Dato curioso sugerido:
+
+“Miguel de Cervantes nació en Alcalá de Henares. La ruta conecta su universidad histórica con varios lugares que mantienen viva su memoria en la ciudad.”
+
+El punto 0 debe incluir enlaces a la ficha de [Patrimonio Mundial de la UNESCO](https://whc.unesco.org/en/list/876/) y a la [historia oficial de la Universidad de Alcalá](https://www.uah.es/es/conoce-la-uah/historia/).
 
 La cabecera de progreso puede quedar fija de forma discreta durante el recorrido:
 
