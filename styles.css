@@ -66,6 +66,9 @@ h1 em, h2 em { font-weight: 500; }
 .intro-point__curiosity { border-left: 3px solid #b36a56; padding: .2rem 0 .2rem 1.1rem; }
 .intro-point__curiosity strong { color: #d58b71; display: block; font-size: .65rem; letter-spacing: .14em; margin-bottom: .45rem; text-transform: uppercase; }
 .intro-point__curiosity p { color: #d2cbc0; font-size: .9rem; line-height: 1.5; margin: 0; }
+.intro-point__clarification { border: 1px solid rgba(213,139,113,.55); margin: 1.45rem 0; padding: 1rem 1.1rem; }
+.intro-point__clarification strong { color: #d58b71; display: block; font-size: .65rem; letter-spacing: .13em; margin-bottom: .45rem; text-transform: uppercase; }
+.intro-point__clarification p { color: #d2cbc0; font-size: .86rem; line-height: 1.5; margin: 0; }
 .intro-point__sources { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; margin-top: 1.6rem; }
 .intro-point__sources a { color: #f2ede4; font-size: .72rem; font-weight: 700; text-underline-offset: .25rem; }
 

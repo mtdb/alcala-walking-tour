@@ -706,9 +706,18 @@ Antes de la primera parada debe explicarse brevemente que Alcalá de Henares fue
 
 La formulación recomendada para la ciudad universitaria es:
 
-“Alcalá conserva uno de los primeros modelos europeos de ciudad universitaria planificada. La Universidad, fundada por el cardenal Cisneros a finales del siglo XV, organizó buena parte de la vida urbana alrededor del estudio, los colegios y los espacios de intercambio.”
+“Alcalá no fue la primera universidad de Europa: Boloña, París y Oxford son anteriores. Lo excepcional es que el proyecto de Cisneros, iniciado en 1499 y desarrollado a comienzos del siglo XVI, concibiera Alcalá como una ciudad universitaria planificada, con colegios, aulas, hospital, imprenta y servicios integrados en el tejido urbano.”
 
-Si se utiliza la expresión “primera ciudad universitaria de Europa”, debe presentarse como una afirmación divulgativa habitual y no como una clasificación absoluta sin fuente. Es preferible hablar de “una de las primeras ciudades universitarias planificadas de Europa” o “uno de los primeros modelos de ciudad universitaria de la Edad Moderna”.
+La expresión “primera ciudad universitaria de Europa” no debe entenderse como “la universidad europea más antigua”. En el sentido urbanístico que recoge la UNESCO, Alcalá se presenta como el primer modelo de ciudad diseñado específicamente para una universidad y convertido después en referencia para otros proyectos europeos y americanos. Es una afirmación sobre la planificación de la ciudad y su influencia, no sobre la antigüedad de la institución universitaria.
+
+Qué hace especial a Alcalá para la UNESCO:
+
+* La relación excepcional entre universidad, recinto histórico y arquitectura civil y religiosa.
+* La conservación de un conjunto urbano concebido alrededor de la enseñanza superior.
+* Su influencia como modelo de universidad y ciudad universitaria en Europa y América.
+* Su importancia en la historia intelectual del Siglo de Oro, incluida la actividad de sus estudiosos, impresores y escritores.
+
+Por tanto, no es “Patrimonio Mundial por ser una ciudad con una universidad antigua”, sino por conservar un conjunto histórico universitario completo, legible e influyente.
 
 Dato curioso sugerido:
 
