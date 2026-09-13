@@ -1,0 +1,14 @@
+{
+  "name": "Alcalá · paseo a pie",
+  "short_name": "Alcalá a pie",
+  "description": "Ruta autoguiada por el casco histórico de Alcalá de Henares.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2ede4",
+  "theme_color": "#25231f",
+  "icons": [
+    { "src": "icons/compass.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

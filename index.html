@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2ede4" />
+    <meta name="description" content="Paseo autoguiado gratuito por el casco histórico de Alcalá de Henares." />
+    <link rel="icon" href="icons/compass.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>De la Universidad a la Puerta de Madrid · Alcalá</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar" data-topbar>
+        <a class="wordmark" href="#inicio" aria-label="Volver al inicio">
+          <span class="wordmark__mark">A</span>
+          <span>Alcalá<br /><small>paseo a pie</small></span>
+        </a>
+        <div class="topbar__status">
+          <span class="topbar__label" data-current-label>Inicio</span>
+          <span class="topbar__progress" data-progress>0 / 8</span>
+        </div>
+        <button class="icon-button" type="button" data-settings aria-label="Abrir opciones de la ruta">⚙</button>
+      </header>
+
+      <main id="inicio">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero__media">
+            <img src="images/san-ildefonso.webp" alt="Fachada del Colegio Mayor de San Ildefonso al atardecer" width="1536" height="1024" fetchpriority="high" />
+          </div>
+          <div class="hero__veil"></div>
+          <div class="hero__content">
+            <p class="eyebrow">Guía urbana · Alcalá de Henares</p>
+            <h1 id="hero-title">De la Universidad<br /><em>a la Puerta de Madrid</em></h1>
+            <p class="hero__intro">Una ruta breve por patios, soportales y memoria cervantina.</p>
+            <div class="hero__facts" aria-label="Datos de la ruta">
+              <span><strong>1,2–1,5</strong> km</span>
+              <span><strong>2–3</strong> horas</span>
+              <span><strong>0 €</strong> ruta base</span>
+            </div>
+            <a class="button button--light" href="#parada-1">Empezar la ruta <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="hero__scroll" aria-hidden="true"><span></span> Desliza para comenzar</div>
+        </section>
+
+        <section class="route-intro" aria-labelledby="route-title">
+          <div>
+            <p class="eyebrow">El recorrido</p>
+            <h2 id="route-title">Ocho lugares,<br /><em>una línea hacia el oeste.</em></h2>
+          </div>
+          <p>Empieza frente a la fachada de San Ildefonso y termina junto a la muralla. Sigue el orden de las paradas para no volver sobre tus pasos.</p>
+          <button class="button button--outline route-intro__optional" type="button" data-optional-toggle>Añadir parada opcional</button>
+        </section>
+
+        <div id="stops" class="stops" data-stops></div>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__title">Alcalá, despacio.</p>
+        <p>Una guía independiente para caminar, mirar arriba y quedarse un minuto más.</p>
+        <div class="footer__links">
+          <button type="button" data-download-gpx>Descargar ruta GPX</button>
+          <a href="tour.md">Ver notas editoriales</a>
+        </div>
+      </footer>
+    </div>
+
+    <dialog class="map-dialog" data-map-dialog>
+      <form method="dialog" class="map-dialog__card">
+        <button class="map-dialog__close" value="cancel" aria-label="Cerrar">×</button>
+        <p class="eyebrow">Preferencias</p>
+        <h2>¿Qué mapa quieres usar?</h2>
+        <p>Lo guardaremos en este dispositivo. Puedes cambiarlo cuando quieras.</p>
+        <div class="provider-options">
+          <button type="button" data-provider="osmand"><span class="provider-icon">⌁</span><span><strong>OsmAnd~</strong><small>Navegación offline</small></span></button>
+          <button type="button" data-provider="google"><span class="provider-icon">↗</span><span><strong>Google Maps</strong><small>Rutas peatonales</small></span></button>
+          <button type="button" data-provider="ask"><span class="provider-icon">⋯</span><span><strong>Preguntar siempre</strong><small>Elegir en cada parada</small></span></button>
+          <button type="button" data-provider="copy"><span class="provider-icon">⌘</span><span><strong>Copiar coordenadas</strong><small>Usar otra aplicación</small></span></button>
+        </div>
+      </form>
+    </dialog>
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
