@@ -11,7 +11,7 @@ const STOPS = [
     id: 2, slug: "plaza-de-cervantes", name: "Plaza de Cervantes", shortName: "Plaza de Cervantes", subtitle: "El centro del casco histórico",
     coordinates: { lat: 40.48255, lng: -3.36425 }, duration: "10–15 min", price: "Gratuita",
     description: "El gran espacio central de Alcalá funciona como transición natural entre la ciudad universitaria y el antiguo núcleo urbano. Alrededor aparecen el Ayuntamiento, el Corral de Comedias y la estatua del escritor.",
-    curiosity: "La estatua de Miguel de Cervantes preside la plaza desde el siglo XIX.", source: "https://www.turismoalcala.es/turismo/plaza-de-cervantes-alcala-de-henares/"
+    curiosity: "La estatua de Miguel de Cervantes preside la plaza desde el siglo XIX.", source: "https://www.turismoalcala.es/turismo/plaza-de-cervantes-alcala-de-henares/", image: "images/plaza-cervantes.webp", alt: "Estatua de Cervantes en la plaza histórica de Alcalá"
   },
   {
     id: 3, slug: "capilla-del-oidor", name: "Capilla del Oidor", shortName: "Capilla del Oidor", subtitle: "Plaza de Rodríguez Marín",
@@ -47,7 +47,7 @@ const STOPS = [
     id: 8, slug: "puerta-de-madrid", name: "Puerta de Madrid", shortName: "Puerta de Madrid", subtitle: "Final · acceso occidental",
     coordinates: { lat: 40.480646, lng: -3.372770 }, duration: "10 min", price: "Gratuita",
     description: "El paseo termina junto al recinto amurallado. La puerta monumental del siglo XVIII cierra el recorrido después de cruzar el centro histórico de este a oeste.",
-    curiosity: "Su entorno se ha utilizado como localización cinematográfica para recrear escenarios históricos.", source: "https://www.turismoalcala.es/turismo/puerta-de-madrid-alcala-de-henares-y-recinto-amurallado/"
+    curiosity: "Su entorno se ha utilizado como localización cinematográfica para recrear escenarios históricos.", source: "https://www.turismoalcala.es/turismo/puerta-de-madrid-alcala-de-henares-y-recinto-amurallado/", image: "images/puerta-madrid.webp", alt: "Puerta de Madrid al final de una calle histórica"
   },
   {
     id: 9, slug: "museo-arqueologico", name: "Museo Arqueológico y Paleontológico", shortName: "Museo Arqueológico", subtitle: "Plaza de las Bernardas · parada opcional",

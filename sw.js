@@ -1,5 +1,5 @@
 const CACHE = "alcala-tour-v1";
-const CORE = ["./", "./index.html", "./styles.css", "./src/app.js", "./manifest.webmanifest", "./icons/compass.svg", "./images/san-ildefonso.webp"];
+const CORE = ["./", "./index.html", "./styles.css", "./src/app.js", "./manifest.webmanifest", "./icons/compass.svg", "./images/san-ildefonso.webp", "./images/plaza-cervantes.webp", "./images/puerta-madrid.webp"];
 
 self.addEventListener("install", (event) => event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE)).then(() => self.skipWaiting())));
 self.addEventListener("activate", (event) => event.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)))).then(() => self.clients.claim())));
