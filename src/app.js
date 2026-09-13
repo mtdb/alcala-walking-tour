@@ -23,7 +23,21 @@ const STOPS = [
     id: 4, slug: "hospital-de-antezana", name: "Hospital de Antezana", shortName: "Hospital de Antezana", subtitle: "Calle Mayor · microparada",
     coordinates: { lat: 40.48229, lng: -3.36686 }, duration: "3–5 min", price: "Exterior gratuito",
     description: "Mira hacia este edificio mientras recorres Calle Mayor bajo sus característicos soportales. Está prácticamente junto a la Casa Natal de Cervantes.",
-    curiosity: "Fue fundado en 1483 y mantiene una extraordinaria continuidad de su función asistencial a lo largo de los siglos.", source: "https://alcalafilmoffice.ayto-alcaladehenares.es/localizaciones/hospital-de-antezana/", image: "images/calle-mayor.webp", alt: "Soportales de la Calle Mayor de Alcalá de Henares"
+    curiosity: "Fue fundado en 1483 y mantiene una extraordinaria continuidad de su función asistencial a lo largo de los siglos.", source: "https://alcalafilmoffice.ayto-alcaladehenares.es/localizaciones/hospital-de-antezana/", image: "images/calle-mayor.webp", alt: "Soportales de la Calle Mayor de Alcalá de Henares",
+    details: [
+      {
+        kind: "look", label: "👀 Fíjate en esto", title: "Busca las mirillas de los soportales",
+        text: "Levanta la vista hacia el techo de los soportales. En algunos puntos todavía se conservan pequeños huecos que comunicaban el soportal con las viviendas situadas encima.",
+        extra: "Permitían comprobar quién llamaba sin bajar. Si querían dejarle entrar, podían hacerle llegar las llaves desde la planta superior, por ejemplo mediante una cuerda: un portero automático medieval.",
+        prompt: "Reto: ¿consigues encontrar una mirando hacia el techo? Se han documentado ejemplos orientativos en Calle Mayor 13, 17, 32 y 37, y también bajo los soportales de Plaza de Cervantes."
+      },
+      {
+        kind: "context", label: "🔎 Contexto histórico", title: "Ventanas engañosas y “casas a la malicia”",
+        text: "Si observas fachadas antiguas con ventanas a diferentes alturas, quizá te recuerden a las llamadas “casas a la malicia”. Este tipo de arquitectura se hizo especialmente famosa en el Madrid de los Austrias.",
+        extra: "Algunas viviendas disimulaban su distribución mediante ventanas irregulares, medias plantas o niveles ocultos. La historia está relacionada con la Regalía de Aposento: ciertas casas debían alojar a miembros de la Corte o contribuir económicamente.",
+        note: "Esta tradición está documentada especialmente en Madrid. No afirmamos que ninguna fachada concreta de esta ruta de Alcalá sea una “casa a la malicia”."
+      }
+    ]
   },
   {
     id: 5, slug: "casa-natal-de-cervantes", name: "Museo Casa Natal de Cervantes", shortName: "Casa Natal de Cervantes", subtitle: "Calle Mayor, 48",
@@ -94,6 +108,7 @@ function stopTemplate(stop, index, visibleStops) {
   const next = visibleStops[index + 1];
   const isVisited = state.visited.includes(stop.id);
   const image = stop.image ? `<div class="stop__image"><img src="${stop.image}" alt="${stop.alt}" loading="lazy" width="1536" height="1024" data-parallax /></div>` : `<div class="stop__image stop__image--fallback" data-mark="${String(stop.id).padStart(2, "0")}" aria-hidden="true"></div>`;
+  const details = (stop.details || []).map((detail) => `<aside class="stop__detail stop__detail--${detail.kind}"><strong>${detail.label}</strong><h3>${detail.title}</h3><p>${detail.text}</p><p>${detail.extra}</p>${detail.prompt ? `<p class="stop__detail-prompt">${detail.prompt}</p>` : ""}${detail.note ? `<p class="stop__detail-note">${detail.note}</p>` : ""}</aside>`).join("");
   const nextBlock = next ? `<div class="stop__next"><small>Siguiente · ${next.duration}</small><a href="#parada-${next.id}">${next.name} <span aria-hidden="true">↘</span></a></div>` : `<div class="stop__next"><small>Has llegado</small><span>Puerta de Madrid</span></div>`;
   const optionalClass = stop.optional ? " stop--optional" : "";
   return `<article class="stop${optionalClass}${isVisited ? " is-visited" : ""}" id="parada-${stop.id}" data-stop-id="${stop.id}">
@@ -104,6 +119,7 @@ function stopTemplate(stop, index, visibleStops) {
         <h2>${stop.name}</h2>
         <p class="stop__subtitle">${stop.subtitle}</p>
         <p class="stop__description">${stop.description}</p>
+        ${details}
         <div class="stop__meta"><span>◷ ${stop.duration}</span><span>◌ ${stop.price}</span></div>
         <aside class="stop__curiosity"><strong>Dato curioso</strong><p>${stop.curiosity}</p></aside>
         <div class="stop__actions">

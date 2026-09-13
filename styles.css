@@ -89,6 +89,18 @@ h1 em, h2 em { font-weight: 500; }
 .stop h2 { color: var(--stop-ink); font-size: clamp(2.5rem, 6vw, 5.4rem); line-height: .94; margin-bottom: 1rem; }
 .stop__subtitle { color: var(--stop-accent); font-size: .76rem; font-weight: 700; letter-spacing: .04em; margin-bottom: 1.6rem; }
 .stop__description { color: var(--stop-ink); font-size: clamp(1rem, 1.7vw, 1.15rem); line-height: 1.65; }
+.stop__detail { background: color-mix(in srgb, var(--stop-bg) 76%, white); border-left: 3px solid var(--stop-accent); margin: 1.45rem 0; padding: 1rem 1.1rem; }
+.stop__detail strong { color: var(--stop-accent); display: block; font-size: .65rem; letter-spacing: .13em; margin-bottom: .45rem; text-transform: uppercase; }
+.stop__detail h3 { color: var(--stop-ink); font-size: 1.45rem; line-height: 1.05; margin: 0 0 .65rem; }
+.stop__detail p { color: var(--stop-ink); font-size: .88rem; line-height: 1.5; margin: 0 0 .65rem; }
+.stop__detail p:last-child { margin-bottom: 0; }
+.stop__detail--look { background: #f5ead5; border-left-width: 5px; box-shadow: 0 8px 22px rgba(86, 54, 29, .08); }
+.stop__detail--look strong { color: #a0522e; }
+.stop__detail-prompt { color: #8c4037 !important; font-weight: 700; }
+.stop__detail--context { background: color-mix(in srgb, var(--stop-bg) 88%, white); border-left-width: 1px; box-shadow: none; opacity: .86; }
+.stop__detail--context h3 { font-size: 1.2rem; }
+.stop__detail--context p { font-size: .8rem; }
+.stop__detail-note { border-top: 1px solid color-mix(in srgb, var(--stop-ink) 20%, transparent); font-style: italic; margin-top: .8rem !important; padding-top: .7rem; }
 .stop__meta { border-bottom: 1px solid color-mix(in srgb, var(--stop-ink) 22%, transparent); border-top: 1px solid color-mix(in srgb, var(--stop-ink) 22%, transparent); display: flex; flex-wrap: wrap; gap: .8rem 1.2rem; margin: 1.7rem 0; padding: .8rem 0; }
 .stop__meta span { color: var(--stop-ink); font-size: .72rem; font-weight: 700; }
 .stop__curiosity { background: color-mix(in srgb, var(--stop-bg) 68%, white); border-left: 3px solid var(--stop-accent); margin: 1.5rem 0; padding: 1rem 1.1rem; }
