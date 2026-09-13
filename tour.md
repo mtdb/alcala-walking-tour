@@ -49,21 +49,25 @@ La duración aproximada es:
 
 ## Hilo temporal de la visita
 
-La ruta puede leerse como una ciudad construida por capas. El Punto 0 debe presentar una línea temporal breve y cada parada puede incorporar un único bloque “Hito en el tiempo”.
+La ruta puede leerse como una ciudad construida por capas. El Punto 0 presenta una línea temporal breve y cada parada incorpora un bloque “Hitos en el tiempo”, que puede reunir varios momentos relevantes sin forzar una única fecha.
 
 Cronología resumida para la interfaz:
 
 * **1483** · Fundación del Hospital de Antezana, en octubre, por Luis de Antezana e Isabel de Guzmán.
 * **1499** · El cardenal Cisneros inicia el proyecto de la Universidad de Alcalá.
 * **1508** · Comienzan los estudios del nuevo proyecto universitario.
+* **1547** · Nace Miguel de Cervantes en Alcalá; es bautizado el 9 de octubre en Santa María la Mayor.
 * **1778** · Se termina la actual Puerta de Alcalá en Madrid.
 * **1788** · Se sustituye el antiguo torreón-puerta de Alcalá por la actual Puerta de Madrid.
 * **1956** · Se inaugura la reconstrucción del museo actual en el emplazamiento tradicional de la Casa Natal de Cervantes.
+* **1991** · La antigua Colegiata de los Santos Justo y Pastor recupera la dignidad catedralicia al reinstaurarse la diócesis complutense.
 * **1998** · Alcalá entra en la lista de Patrimonio Mundial de la UNESCO.
 
 No todas las fechas tienen la misma precisión. La interfaz debe distinguir entre “fecha documentada”, “siglo o periodo aproximado”, “edificio actual” y “hito de uso”. Nunca se debe inventar una fecha de inauguración para completar la cronología.
 
 El Hospital de Antezana es deliberadamente anterior al proyecto universitario: no forma parte de su diseño fundacional, sino de la ciudad medieval preexistente sobre la que la Universidad se implantó y con la que convivió.
+
+La cronología debe entenderse como una sucesión de capas, no como una lista de inauguraciones. Cuando una fecha sea aproximada se indicará como siglo o periodo; cuando corresponda a una transformación posterior, se explicitará (“edificio actual”, “nombre actual” o “restauración”).
 
 ---
 
@@ -126,15 +130,21 @@ https://www.google.com/maps/search/?api=1&query=40.48255,-3.36425
 
 Descripción corta:
 
-Es el gran espacio central del casco histórico de Alcalá. Funciona como transición natural entre la ciudad universitaria y el antiguo núcleo urbano.
+Es el gran espacio central del casco histórico de Alcalá. Nació como Plaza del Mercado, funciona como transición natural entre la ciudad universitaria y el antiguo núcleo urbano y sigue siendo un lugar de encuentro.
 
 Alrededor de la plaza se encuentran, entre otros edificios, el Ayuntamiento y el Corral de Comedias.
 
 Dato curioso:
 
-La estatua de Miguel de Cervantes preside la plaza desde el siglo XIX.
+La estatua de Miguel de Cervantes, obra de Carlo Nicoli, preside la plaza desde 1879.
 
-La plaza estuvo estrechamente vinculada a la antigua parroquia de Santa María, relacionada con el bautismo de Cervantes.
+La plaza ha cambiado de nombre y de aspecto, pero no ha perdido su función pública. Desde 1879 recibe el nombre de Cervantes; hoy continúa siendo el centro social y cultural de Alcalá.
+
+Hitos en el tiempo:
+
+* **Edad Media** · Plaza del Mercado y espacio principal de la vida pública de la villa.
+* **1879** · Adopta el nombre de Plaza de Cervantes y se inaugura la estatua del escritor.
+* **Hoy** · Mantiene su función como plaza viva, escenario de actos, fiestas y encuentros.
 
 Tiempo recomendado:
 
@@ -173,7 +183,15 @@ Es una de las mejores paradas de la ruta en relación entre interés histórico,
 
 Dato curioso:
 
-La capilla formaba parte de la antigua iglesia de Santa María la Mayor, que quedó gravemente destruida durante la Guerra Civil.
+La Capilla del Oidor pertenecía a la antigua iglesia parroquial de Santa María la Mayor, no a la Catedral Magistral. La iglesia quedó gravemente destruida por un incendio en julio de 1936; hoy se conservan sus ábsides, la torre y algunas capillas.
+
+Hitos en el tiempo:
+
+* **Mediados del siglo XIII** · Se erige la antigua parroquia de Santa María la Mayor.
+* **1936** · Un incendio destruye gran parte de la iglesia durante la Guerra Civil.
+* **Hoy** · La Capilla del Oidor y la torre forman parte del conjunto recuperado y abierto al público.
+
+No debe confundirse este conjunto con la Catedral Magistral, situada en la Plaza de los Santos Niños. Son edificios distintos: la Catedral también sufrió daños en 1936, pero fue restaurada y continúa en pie y abierta al culto.
 
 Coste:
 
@@ -260,7 +278,11 @@ No hace falta dedicarle demasiado tiempo; interesa principalmente observar el ed
 
 Dato curioso:
 
-Fue fundado en 1483 y es conocido por la extraordinaria continuidad de su función asistencial a lo largo de los siglos.
+Fue fundado en octubre de 1483 y es uno de los hospitales en funcionamiento más antiguos de Europa. Mantiene su actividad asistencial en el mismo lugar desde hace más de cinco siglos.
+
+No se debe afirmar sin matices que sea “el hospital más antiguo de España”: esa comparación depende de cómo se defina continuidad y de qué instituciones se incluyan. La formulación segura es “uno de los más antiguos de Europa en funcionamiento continuo”.
+
+Su fecha es anterior a la Universidad de Cisneros (1499). No nació como parte de su diseño fundacional, sino que pertenece a la ciudad medieval preexistente sobre la que la Universidad se implantó.
 
 Tiempo recomendado:
 
@@ -311,6 +333,20 @@ Dato curioso:
 
 Delante del museo se encuentran las populares esculturas de Don Quijote y Sancho Panza, que suelen convertirse en una de las fotografías más reconocibles del paseo.
 
+Información cervantina adicional:
+
+Miguel de Cervantes nació en Alcalá en **1547** y fue bautizado el **9 de octubre de 1547** en la antigua iglesia de Santa María la Mayor. La fecha exacta de nacimiento no se conserva; tradicionalmente se propone el 29 de septiembre.
+
+Murió en Madrid el **22 de abril de 1616**, tras una enfermedad cuya causa exacta no está documentada. La diabetes es una hipótesis moderna, no un diagnóstico histórico confirmado. El 23 de abril aparece en algunos registros por corresponder a la fecha de su entierro.
+
+La pila bautismal y una reproducción de la partida de bautismo se conservan en la Capilla del Oidor. También se documentan allí las partidas de bautismo de cuatro de sus hermanos.
+
+Hitos en el tiempo:
+
+* **1547** · Nacimiento y bautismo de Cervantes en Alcalá.
+* **1616** · Muerte del escritor en Madrid.
+* **1956** · Inauguración de la reconstrucción del museo actual.
+
 Coste:
 
 Entrada gratuita para visitas individuales según la información oficial consultada.
@@ -325,6 +361,11 @@ Fuente oficial:
 
 Museo Casa Natal de Cervantes
 https://museocasanataldecervantes.org/informacion-general/
+
+Fuente biográfica para las fechas y la muerte:
+
+Biblioteca Virtual Miguel de Cervantes
+https://www.cervantesvirtual.com/portales/miguel_de_cervantes/autor_biografia_3/
 
 Información histórica adicional:
 
@@ -348,13 +389,20 @@ https://www.google.com/maps/search/?api=1&query=40.48063,-3.36881
 
 Descripción corta:
 
-La ruta continúa hasta la Plaza de los Santos Niños, donde se encuentra la Catedral Magistral, uno de los principales monumentos religiosos de Alcalá.
+La ruta continúa hasta la Plaza de los Santos Niños, cuyo nombre procede de la Catedral Magistral de los Santos Justo y Pastor, uno de los principales monumentos religiosos de Alcalá.
 
-El lugar está relacionado con la tradición del martirio de los niños Justo y Pastor y con los orígenes religiosos de la ciudad medieval.
+Según la tradición, Justo y Pastor eran dos jóvenes cristianos de la antigua Complutum que fueron martirizados aquí a comienzos del siglo IV. La catedral se levanta sobre el lugar asociado a su martirio y sepultura.
 
 Dato curioso:
 
 El título de “Magistral” está históricamente relacionado con el requisito de que sus canónigos tuvieran formación universitaria y fueran maestros.
+
+Hitos en el tiempo:
+
+* **Comienzos del siglo IV** · La tradición sitúa aquí el martirio y sepultura de Justo y Pastor, los “Santos Niños”.
+* **1497–1515** · Cisneros impulsa la construcción gótica del templo actual.
+* **1519** · La iglesia recibe el título de Magistral.
+* **1991** · Recupera la dignidad catedralicia al reinstaurarse la diócesis complutense.
 
 Información económica importante:
 
@@ -430,13 +478,21 @@ Descripción corta:
 
 Uno de los grandes centros históricos de poder de Alcalá.
 
-Durante siglos fue residencia de los arzobispos de Toledo.
+Durante siglos Alcalá perteneció a la archidiócesis de Toledo. El palacio fue la residencia temporal de sus arzobispos y un centro de gobierno y representación; no era la sede principal del arzobispado, que estaba en Toledo.
 
 La plaza y el exterior del complejo funcionan muy bien como transición entre el núcleo monumental y el recinto amurallado.
 
 Dato curioso:
 
 El complejo sufrió un enorme incendio en 1939 que destruyó una parte importante de sus dependencias y archivos.
+
+Hitos en el tiempo:
+
+* **Siglo XIII** · Se construye como residencia de los arzobispos de Toledo dentro del recinto amurallado.
+* **Siglo XVI** · La antigua fortaleza se transforma en un gran palacio renacentista, con la intervención de Alonso de Covarrubias.
+* **1939** · Un incendio destruye buena parte de sus interiores y archivos.
+
+Alcalá no sustituía a Toledo: su posición estratégica y su importancia política y religiosa explican que los prelados mantuvieran aquí una residencia fortificada y pasaran largas temporadas.
 
 Información práctica:
 

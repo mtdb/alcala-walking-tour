@@ -101,6 +101,7 @@ h1 em, h2 em { font-weight: 500; }
 .stop__timeline { border-bottom: 1px solid color-mix(in srgb, var(--stop-ink) 22%, transparent); border-top: 1px solid color-mix(in srgb, var(--stop-ink) 22%, transparent); margin: 1.35rem 0; padding: .7rem 0; }
 .stop__timeline-label { color: var(--stop-accent); display: block; font-size: .62rem; font-weight: 700; letter-spacing: .13em; margin-bottom: .4rem; text-transform: uppercase; }
 .stop__timeline > div { align-items: baseline; display: flex; gap: .8rem; }
+.stop__timeline > div + div { margin-top: .65rem; }
 .stop__timeline strong { color: var(--stop-accent); font-family: var(--serif); font-size: 1.45rem; font-weight: 500; white-space: nowrap; }
 .stop__timeline > div > span { color: var(--stop-ink); font-size: .78rem; line-height: 1.4; }
 .stop__timeline b { display: block; font-size: .78rem; font-weight: 700; }
@@ -174,6 +175,8 @@ h1 em, h2 em { font-weight: 500; }
   .stop__media { min-height: 70vw; width: calc(100% - 1rem); }
   .stop__media::after { inset: .7rem -.7rem -.7rem .7rem; }
   .stop__number { font-size: 5rem; }
+  .stop__timeline > div { align-items: flex-start; }
+  .stop__timeline strong { font-size: 1.2rem; }
   .stop__actions .button { flex: 1 1 12rem; }
   .stop--optional { margin: 0 1.25rem; }
 }
