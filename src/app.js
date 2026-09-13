@@ -38,12 +38,6 @@ const STOPS = [
         text: "Levanta la vista hacia el techo de los soportales. En algunos puntos todavía se conservan pequeños huecos que comunicaban el soportal con las viviendas situadas encima.",
         extra: "Permitían comprobar quién llamaba sin bajar. Si querían dejarle entrar, podían hacerle llegar las llaves desde la planta superior, por ejemplo mediante una cuerda: un portero automático medieval.",
         prompt: "Reto: ¿consigues encontrar una mirando hacia el techo? Se han documentado ejemplos orientativos en Calle Mayor 13, 17, 32 y 37, y también bajo los soportales de Plaza de Cervantes."
-      },
-      {
-        kind: "context", label: "🔎 Contexto histórico", title: "Ventanas engañosas y “casas a la malicia”",
-        text: "Si observas fachadas antiguas con ventanas a diferentes alturas, quizá te recuerden a las llamadas “casas a la malicia”. Este tipo de arquitectura se hizo especialmente famosa en el Madrid de los Austrias.",
-        extra: "Algunas viviendas disimulaban su distribución mediante ventanas irregulares, medias plantas o niveles ocultos. La historia está relacionada con la Regalía de Aposento: ciertas casas debían alojar a miembros de la Corte o contribuir económicamente.",
-        note: "Esta tradición está documentada especialmente en Madrid. No afirmamos que ninguna fachada concreta de esta ruta de Alcalá sea una “casa a la malicia”."
       }
     ]
   },

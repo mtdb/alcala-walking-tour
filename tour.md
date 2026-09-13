@@ -222,7 +222,7 @@ Recorre Calle Mayor bajo sus característicos soportales. Esta calle fue uno de 
 
 ## Curiosidades interactivas del tramo
 
-Estas dos curiosidades se muestran dentro del tramo de Calle Mayor, antes del Hospital de Antezana y de la Casa Natal de Cervantes. No son paradas independientes y no modifican el orden ni el contador de la ruta.
+Esta curiosidad se muestra dentro del tramo de Calle Mayor, antes del Hospital de Antezana y de la Casa Natal de Cervantes. No es una parada independiente y no modifica el orden ni el contador de la ruta.
 
 ### Busca las mirillas de los soportales
 
@@ -237,22 +237,6 @@ Se han documentado mirillas en varios puntos de Calle Mayor, entre ellos los nú
 Reto sugerido:
 
 “¿Consigues encontrar una mirando hacia el techo?”
-
-### Ventanas engañosas y “casas a la malicia”
-
-Curiosidad secundaria y visualmente más discreta.
-
-Si se observan fachadas antiguas con ventanas colocadas a diferentes alturas, pueden recordar a las llamadas “casas a la malicia”. Este tipo de arquitectura se hizo especialmente famosa en el Madrid de los Austrias.
-
-Algunas viviendas disimulaban su verdadera distribución mediante ventanas irregulares, medias plantas, buhardillas o niveles ocultos. La explicación está relacionada con la Regalía de Aposento: determinadas casas debían alojar a miembros de la Corte o contribuir económicamente.
-
-La finalidad no debe resumirse como “pagar menos impuestos por tener menos pisos”. Algunos propietarios intentaban que sus viviendas parecieran menos aptas para alojar funcionarios o más difíciles de dividir desde el exterior.
-
-Nota editorial obligatoria:
-
-“Esta historia está bien documentada especialmente en Madrid. No afirmamos que una fachada concreta de esta ruta de Alcalá sea una ‘casa a la malicia’ salvo que exista una fuente histórica fiable que lo confirme.”
-
-No inventar una localización concreta en Alcalá. Si en el futuro se identifica un edificio alcalaíno con una fuente sólida, añadir esa referencia de forma explícita.
 
 ---
 
