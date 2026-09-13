@@ -1,4 +1,4 @@
-const CACHE = "alcala-tour-v1";
+const CACHE = "alcala-tour-v2";
 const CORE = ["./", "./index.html", "./styles.css", "./src/app.js", "./manifest.webmanifest", "./icons/compass.svg", "./images/san-ildefonso.webp", "./images/plaza-cervantes.webp", "./images/capilla-oidor.webp", "./images/calle-mayor.webp", "./images/casa-natal.webp", "./images/catedral-magistral.webp", "./images/palacio-arzobispal.webp", "./images/puerta-madrid.webp"];
 
 self.addEventListener("install", (event) => event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE)).then(() => self.skipWaiting())));

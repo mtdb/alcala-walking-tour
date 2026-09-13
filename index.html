@@ -71,7 +71,7 @@
             <p class="eyebrow">El recorrido</p>
             <h2 id="route-title">Ocho lugares,<br /><em>una línea hacia el oeste.</em></h2>
           </div>
-          <p>Empieza frente a la fachada de San Ildefonso y termina junto a la muralla. Sigue el orden de las paradas para no volver sobre tus pasos.</p>
+          <p>Empieza frente a la fachada de San Ildefonso y termina junto a la muralla. Sigue el orden de las paradas para no volver sobre tus pasos.<small class="glossary-hint">Pulsa las palabras subrayadas para consultar su significado.</small></p>
           <button class="button button--outline route-intro__optional" type="button" data-optional-toggle>Añadir parada opcional</button>
         </section>
 
@@ -100,6 +100,15 @@
           <button type="button" data-provider="ask"><span class="provider-icon">⋯</span><span><strong>Preguntar siempre</strong><small>Elegir en cada parada</small></span></button>
           <button type="button" data-provider="copy"><span class="provider-icon">⌘</span><span><strong>Copiar coordenadas</strong><small>Usar otra aplicación</small></span></button>
         </div>
+      </form>
+    </dialog>
+    <dialog class="glossary-dialog" data-glossary-dialog aria-labelledby="glossary-title">
+      <form method="dialog" class="glossary-dialog__card">
+        <button class="glossary-dialog__close" value="cancel" aria-label="Cerrar definición">×</button>
+        <p class="eyebrow">Glosario de la ruta</p>
+        <h2 id="glossary-title" data-glossary-title></h2>
+        <p class="glossary-dialog__definition" data-glossary-definition></p>
+        <button class="button button--light glossary-dialog__button" value="cancel">Cerrar</button>
       </form>
     </dialog>
     <script type="module" src="src/app.js"></script>

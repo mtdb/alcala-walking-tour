@@ -1,3 +1,32 @@
+const GLOSSARY = [
+  { key: "archidiocesis", pattern: "\\barchidiócesis\\b", title: "Archidiócesis", definition: "Territorio formado por varias diócesis, dirigido por un arzobispo." },
+  { key: "arzobispo", pattern: "\\barzobisp(?:o|os|ado|al)\\b", title: "Arzobispo", definition: "Obispo que dirige una archidiócesis y ocupa una posición de mayor rango dentro de la organización de la Iglesia católica." },
+  { key: "diocesis", pattern: "\\bdiócesis\\b", title: "Diócesis", definition: "Territorio y comunidad de iglesias que están bajo la autoridad de un obispo." },
+  { key: "martirio", pattern: "\\b(?:martirio|martirizados?|martirizadas?)\\b", title: "Martirio", definition: "Muerte o sufrimiento padecido por una persona por mantener sus creencias, especialmente religiosas." },
+  { key: "abside", pattern: "\\bábside(?:s)?\\b", title: "Ábside", definition: "Parte normalmente semicircular o poligonal que cierra la cabecera de una iglesia, donde suele situarse el altar." },
+  { key: "parroquia", pattern: "\\bparroqui(?:a|al)\\b", title: "Parroquia", definition: "Comunidad local de fieles y territorio atendido por un sacerdote dependiente de una diócesis." },
+  { key: "canonigo", pattern: "\\bcanónigo(?:s)?\\b", title: "Canónigo", definition: "Miembro del cabildo de una catedral o colegiata, encargado de tareas religiosas y de gobierno del templo." },
+  { key: "magistral", pattern: "\\bmagistral\\b", title: "Magistral", definition: "Título histórico de una iglesia cuyo cabildo exigía que sus canónigos fueran maestros o magísteres en Teología." },
+  { key: "catedralicia", pattern: "\\bcatedralici(?:a|o|as|os)\\b", title: "Dignidad catedralicia", definition: "Condición o rango oficial que identifica a una iglesia como catedral, sede del obispo." },
+  { key: "bautismo", pattern: "\\b(?:bautismo|bautismal|bautizado|bautizada|bautizados|bautizadas)\\b", title: "Bautismo", definition: "Rito de incorporación a la comunidad cristiana. “Bautismal” significa relacionado con ese rito." },
+  { key: "facsimil", pattern: "\\bfacsímil\\b", title: "Facsímil", definition: "Reproducción muy fiel de un documento u objeto original." },
+  { key: "soportal", pattern: "\\bsoportales?\\b", title: "Soportal", definition: "Espacio cubierto delante de las casas, normalmente sostenido por columnas o arcos, que protege el paso de los peatones." },
+  { key: "renacentista", pattern: "\\brenacentista\\b", title: "Renacentista", definition: "Relacionado con el Renacimiento, movimiento cultural y artístico europeo de los siglos XV y XVI." },
+  { key: "gotico", pattern: "\\bgótic[oa]s?\\b", title: "Gótico", definition: "Estilo artístico medieval caracterizado, entre otros rasgos, por arcos apuntados, grandes alturas y vidrieras." },
+  { key: "emplazamiento", pattern: "\\bemplazamiento\\b", title: "Emplazamiento", definition: "Lugar concreto donde está situado un edificio o una actividad." },
+  { key: "sepultura", pattern: "\\bsepultura\\b", title: "Sepultura", definition: "Lugar donde se entierra a una persona; también puede referirse al acto de enterrarla." },
+  { key: "recinto_amurallado", pattern: "\\brecinto amurallado\\b", title: "Recinto amurallado", definition: "Área delimitada y protegida por una muralla y sus torres o puertas." }
+].map((entry) => ({ ...entry, matcher: new RegExp(`^(?:${entry.pattern})$`, "iu") }));
+
+const GLOSSARY_PATTERN = new RegExp(GLOSSARY.map((entry) => entry.pattern).sort((a, b) => b.length - a.length).join("|"), "giu");
+function glossaryMarkup(value) {
+  if (!value) return "";
+  return String(value).replace(GLOSSARY_PATTERN, (match) => {
+    const entry = GLOSSARY.find((item) => item.matcher.test(match));
+    return entry ? `<button class="glossary-term" type="button" data-glossary="${entry.key}" aria-haspopup="dialog">${match}</button>` : match;
+  });
+}
+
 const STOPS = [
   {
     id: 1, slug: "colegio-mayor-san-ildefonso", name: "Colegio Mayor de San Ildefonso",
@@ -100,6 +129,17 @@ function mainStops() {
 }
 const $ = (selector, root = document) => root.querySelector(selector);
 
+let lastGlossaryTrigger;
+function openGlossary(key, trigger) {
+  const entry = GLOSSARY.find((item) => item.key === key);
+  const dialog = $("[data-glossary-dialog]");
+  if (!entry || !dialog) return;
+  lastGlossaryTrigger = trigger;
+  $("[data-glossary-title]", dialog).textContent = entry.title;
+  $("[data-glossary-definition]", dialog).textContent = entry.definition;
+  if (typeof dialog.showModal === "function") dialog.showModal(); else dialog.setAttribute("open", "");
+}
+
 function googlePlace(stop) { return `https://www.google.com/maps/search/?api=1&query=${stop.coordinates.lat},${stop.coordinates.lng}`; }
 function googleDirections(from, to) {
   const origin = from ? `&origin=${from.coordinates.lat},${from.coordinates.lng}` : "";
@@ -124,8 +164,8 @@ function stopTemplate(stop, index, visibleStops) {
   const isVisited = state.visited.includes(stop.id);
   const image = stop.image ? `<div class="stop__image"><img src="${stop.image}" alt="${stop.alt}" loading="lazy" width="1536" height="1024" data-parallax /></div>` : `<div class="stop__image stop__image--fallback" data-mark="${String(stop.id).padStart(2, "0")}" aria-hidden="true"></div>`;
   const timelineItems = stop.timeline ? (Array.isArray(stop.timeline) ? stop.timeline : [stop.timeline]) : [];
-  const timeline = timelineItems.length ? `<div class="stop__timeline"><span class="stop__timeline-label">Hitos en el tiempo</span>${timelineItems.map((item) => `<div><strong>${item.date}</strong><span><b>${item.label}</b>${item.text}</span></div>`).join("")}</div>` : "";
-  const details = (stop.details || []).map((detail) => `<aside class="stop__detail stop__detail--${detail.kind}"><strong>${detail.label}</strong><h3>${detail.title}</h3><p>${detail.text}</p><p>${detail.extra}</p>${detail.prompt ? `<p class="stop__detail-prompt">${detail.prompt}</p>` : ""}${detail.note ? `<p class="stop__detail-note">${detail.note}</p>` : ""}</aside>`).join("");
+  const timeline = timelineItems.length ? `<div class="stop__timeline"><span class="stop__timeline-label">Hitos en el tiempo</span>${timelineItems.map((item) => `<div><strong>${glossaryMarkup(item.date)}</strong><span><b>${glossaryMarkup(item.label)}</b>${glossaryMarkup(item.text)}</span></div>`).join("")}</div>` : "";
+  const details = (stop.details || []).map((detail) => `<aside class="stop__detail stop__detail--${detail.kind}"><strong>${glossaryMarkup(detail.label)}</strong><h3>${glossaryMarkup(detail.title)}</h3><p>${glossaryMarkup(detail.text)}</p><p>${glossaryMarkup(detail.extra)}</p>${detail.prompt ? `<p class="stop__detail-prompt">${glossaryMarkup(detail.prompt)}</p>` : ""}${detail.note ? `<p class="stop__detail-note">${glossaryMarkup(detail.note)}</p>` : ""}</aside>`).join("");
   const nextBlock = next ? `<div class="stop__next"><small>Siguiente · ${next.duration}</small><a href="#parada-${next.id}">${next.name} <span aria-hidden="true">↘</span></a></div>` : `<div class="stop__next"><small>Has llegado</small><span>Puerta de Madrid</span></div>`;
   const optionalClass = stop.optional ? " stop--optional" : "";
   return `<article class="stop${optionalClass}${isVisited ? " is-visited" : ""}" id="parada-${stop.id}" data-stop-id="${stop.id}">
@@ -133,13 +173,13 @@ function stopTemplate(stop, index, visibleStops) {
       <div class="stop__copy">
         <p class="stop__number" aria-hidden="true">${String(stop.id).padStart(2, "0")}</p>
         <p class="stop__tag">${stop.optional ? "Parada opcional" : `Parada ${String(stop.id).padStart(2, "0")}`}</p>
-        <h2>${stop.name}</h2>
-        <p class="stop__subtitle">${stop.subtitle}</p>
-        <p class="stop__description">${stop.description}</p>
+        <h2>${glossaryMarkup(stop.name)}</h2>
+        <p class="stop__subtitle">${glossaryMarkup(stop.subtitle)}</p>
+        <p class="stop__description">${glossaryMarkup(stop.description)}</p>
         ${timeline}
         ${details}
         <div class="stop__meta"><span>◷ ${stop.duration}</span><span>◌ ${stop.price}</span></div>
-        <aside class="stop__curiosity"><strong>Dato curioso</strong><p>${stop.curiosity}</p></aside>
+        <aside class="stop__curiosity"><strong>Dato curioso</strong><p>${glossaryMarkup(stop.curiosity)}</p></aside>
         <div class="stop__actions">
           <button class="button button--accent" type="button" data-navigate="${stop.id}"${next ? "" : " disabled"}>${next ? "Caminar a la siguiente" : "Fin del paseo"} <span aria-hidden="true">↗</span></button>
           <button class="button button--outline" type="button" data-place="${stop.id}">Ver este lugar</button>
@@ -237,6 +277,14 @@ document.querySelectorAll("[data-provider]").forEach((button) => button.addEvent
   dialog.close();
   if (action && ["place", "navigate"].includes(action)) launchMap(action, stopId);
 }));
+
+document.addEventListener("click", (event) => {
+  const trigger = event.target instanceof Element ? event.target.closest("[data-glossary]") : null;
+  if (trigger) openGlossary(trigger.dataset.glossary, trigger);
+});
+const glossaryDialog = $("[data-glossary-dialog]");
+glossaryDialog.addEventListener("click", (event) => { if (event.target === event.currentTarget) event.currentTarget.close(); });
+glossaryDialog.addEventListener("close", () => { lastGlossaryTrigger?.focus(); lastGlossaryTrigger = undefined; });
 
 $("[data-download-gpx]").addEventListener("click", () => {
   const stops = mainStops();

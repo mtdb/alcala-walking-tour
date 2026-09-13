@@ -829,6 +829,16 @@ La sección visible y una parada marcada como visitada son conceptos diferentes.
 
 No hace falta backend.
 
+## Glosario contextual
+
+Los términos históricos, arquitectónicos o religiosos menos cotidianos deben aparecer como botones discretamente subrayados dentro del texto. Al pulsarlos se abre un modal accesible con:
+
+* El término como título.
+* Una definición breve en lenguaje claro.
+* Cierre mediante botón, tecla Escape o pulsando fuera del diálogo.
+
+El glosario no debe convertir cada palabra culta en una interrupción. Se limita a conceptos que pueden dificultar la comprensión sobre el terreno, como “archidiócesis”, “ábside”, “martirio”, “soportal”, “facsímil” o “renacentista”. Debe funcionar con teclado y conservar el foco en el término que abrió el diálogo al cerrarlo.
+
 ---
 
 # Navegación y mapas
