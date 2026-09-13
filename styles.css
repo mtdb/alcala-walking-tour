@@ -127,6 +127,7 @@ h1 em, h2 em { font-weight: 500; }
 .stop.is-visited .stop__number { opacity: .35; }
 .stop.is-visited h2 { text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--stop-accent) 45%, transparent); text-decoration-thickness: 1px; }
 .source-link { color: var(--stop-accent); font-size: .72rem; font-weight: 700; }
+.stop__sources { display: flex; flex-wrap: wrap; gap: .5rem 1.1rem; }
 
 .footer { background: #25231f; color: #f2ede4; padding: 4rem clamp(1.25rem, 7vw, 7rem); }
 .footer__title { font-family: var(--serif); font-size: clamp(2.3rem, 6vw, 5rem); letter-spacing: -.04em; margin-bottom: .6rem; }

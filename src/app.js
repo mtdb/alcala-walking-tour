@@ -61,7 +61,7 @@ const STOPS = [
     id: 8, slug: "puerta-de-madrid", name: "Puerta de Madrid", shortName: "Puerta de Madrid", subtitle: "Final · acceso occidental",
     coordinates: { lat: 40.480646, lng: -3.372770 }, duration: "10 min", price: "Gratuita",
     description: "El paseo termina junto al recinto amurallado. La puerta monumental del siglo XVIII cierra el recorrido después de cruzar el centro histórico de este a oeste.",
-    curiosity: "Su entorno se ha utilizado como localización cinematográfica para recrear escenarios históricos.", source: "https://www.turismoalcala.es/turismo/puerta-de-madrid-alcala-de-henares-y-recinto-amurallado/", image: "images/puerta-madrid.webp", alt: "Puerta de Madrid al final de una calle histórica"
+    curiosity: "En Spartacus (1960), dirigida por Stanley Kubrick y protagonizada por Kirk Douglas, la Puerta de Madrid aparece transformada en una puerta de la Roma antigua. Varias escenas de la película se rodaron en Alcalá.", source: "https://www.turismoalcala.es/turismo/puerta-de-madrid-alcala-de-henares-y-recinto-amurallado/", sourceExtra: "https://www.eldiario.es/viajes/ciudad-historica-madrid-rodo-clasicos-hollywood-semana-santa-alcala-de-henares-pm_1_12204061.html", image: "images/puerta-madrid.webp", alt: "Puerta de Madrid al final de una calle histórica"
   },
   {
     id: 9, slug: "museo-arqueologico", name: "Museo Arqueológico y Paleontológico", shortName: "Museo Arqueológico", subtitle: "Plaza de las Bernardas · parada opcional",
@@ -128,7 +128,7 @@ function stopTemplate(stop, index, visibleStops) {
           <button class="button button--outline" type="button" data-copy="${stop.id}">Copiar coordenadas</button>
           <button class="visit-toggle" type="button" data-visit="${stop.id}" aria-pressed="${isVisited}"><span class="visit-toggle__box" aria-hidden="true"></span>${isVisited ? "Visitada" : "Marcar como visitada"}</button>
         </div>
-        <a class="source-link" href="${stop.source}" target="_blank" rel="noreferrer">Información oficial ↗</a>
+        <div class="stop__sources"><a class="source-link" href="${stop.source}" target="_blank" rel="noreferrer">Información oficial ↗</a>${stop.sourceExtra ? `<a class="source-link" href="${stop.sourceExtra}" target="_blank" rel="noreferrer">Referencia del rodaje ↗</a>` : ""}</div>
         ${nextBlock}
       </div>
       <div class="stop__media">${image}</div>

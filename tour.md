@@ -483,15 +483,15 @@ Es un buen punto final porque el visitante ha cruzado prácticamente todo el cen
 
 Dato curioso:
 
-La Puerta de Madrid y su entorno han sido utilizados como localización cinematográfica para recrear escenarios históricos.
+En *Spartacus* (1960), dirigida por Stanley Kubrick y protagonizada por Kirk Douglas, la Puerta de Madrid aparece transformada en una puerta de la Roma antigua. Varias escenas de la película se rodaron en Alcalá.
 
 Advertencia sobre una información encontrada durante la investigación:
 
-Turismo de Alcalá menciona la aparición del lugar en la película “Espartaco”, pero una de sus páginas asignaba erróneamente a la película el año 1956.
+Turismo de Alcalá menciona la aparición del lugar en la película “Espartaco”, pero una de sus páginas asigna erróneamente a la película el año 1956.
 
-La película “Spartacus” dirigida por Stanley Kubrick es de 1960.
+La película “Spartacus”, dirigida por Stanley Kubrick y protagonizada por Kirk Douglas, es de 1960. La Puerta de Madrid se utilizó como una puerta romana dentro del filme.
 
-Por lo tanto, si se menciona esta curiosidad, no repetir el año 1956.
+Por lo tanto, no repetir el año 1956. Para contexto adicional sobre los rodajes en Alcalá puede enlazarse el artículo de [elDiario.es](https://www.eldiario.es/viajes/ciudad-historica-madrid-rodo-clasicos-hollywood-semana-santa-alcala-de-henares-pm_1_12204061.html).
 
 Tiempo recomendado:
 
