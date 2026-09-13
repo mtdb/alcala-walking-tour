@@ -17,31 +17,31 @@ const STOPS = [
     id: 3, slug: "capilla-del-oidor", name: "Capilla del Oidor", shortName: "Capilla del Oidor", subtitle: "Plaza de Rodríguez Marín",
     coordinates: { lat: 40.481703, lng: -3.363425 }, duration: "10–15 min", price: "Entrada gratuita",
     description: "Pequeña pero esencial parada cervantina. Conserva la pila bautismal vinculada al bautismo de Miguel de Cervantes y un facsímil de su partida de bautismo.",
-    curiosity: "Formaba parte de la antigua iglesia de Santa María la Mayor, gravemente destruida durante la Guerra Civil.", source: "https://www.turismoalcala.es/turismo/monumento-capilla-del-oidor/"
+    curiosity: "Formaba parte de la antigua iglesia de Santa María la Mayor, gravemente destruida durante la Guerra Civil.", source: "https://www.turismoalcala.es/turismo/monumento-capilla-del-oidor/", image: "images/capilla-oidor.webp", alt: "Exterior de la Capilla del Oidor en una plaza histórica"
   },
   {
     id: 4, slug: "hospital-de-antezana", name: "Hospital de Antezana", shortName: "Hospital de Antezana", subtitle: "Calle Mayor · microparada",
     coordinates: { lat: 40.48229, lng: -3.36686 }, duration: "3–5 min", price: "Exterior gratuito",
     description: "Mira hacia este edificio mientras recorres Calle Mayor bajo sus característicos soportales. Está prácticamente junto a la Casa Natal de Cervantes.",
-    curiosity: "Fue fundado en 1483 y mantiene una extraordinaria continuidad de su función asistencial a lo largo de los siglos.", source: "https://alcalafilmoffice.ayto-alcaladehenares.es/localizaciones/hospital-de-antezana/"
+    curiosity: "Fue fundado en 1483 y mantiene una extraordinaria continuidad de su función asistencial a lo largo de los siglos.", source: "https://alcalafilmoffice.ayto-alcaladehenares.es/localizaciones/hospital-de-antezana/", image: "images/calle-mayor.webp", alt: "Soportales de la Calle Mayor de Alcalá de Henares"
   },
   {
     id: 5, slug: "casa-natal-de-cervantes", name: "Museo Casa Natal de Cervantes", shortName: "Casa Natal de Cervantes", subtitle: "Calle Mayor, 48",
     coordinates: { lat: 40.48225, lng: -3.36705 }, duration: "20–30 min", price: "Entrada gratuita",
     description: "El museo ocupa el emplazamiento tradicionalmente identificado con la vivienda de la familia de Miguel de Cervantes y recrea el ambiente de una casa acomodada de los siglos XVI y XVII.",
-    curiosity: "Las esculturas de Don Quijote y Sancho Panza esperan delante del museo para una de las fotos más reconocibles del paseo.", source: "https://museocasanataldecervantes.org/informacion-general/"
+    curiosity: "Las esculturas de Don Quijote y Sancho Panza esperan delante del museo para una de las fotos más reconocibles del paseo.", source: "https://museocasanataldecervantes.org/informacion-general/", image: "images/casa-natal.webp", alt: "Exterior de la Casa Natal de Cervantes en Calle Mayor"
   },
   {
     id: 6, slug: "catedral-magistral", name: "Catedral Magistral", shortName: "Catedral Magistral", subtitle: "Plaza de los Santos Niños",
     coordinates: { lat: 40.48063, lng: -3.36881 }, duration: "10–15 min", price: "Exterior gratuito",
     description: "La ruta continúa hasta la Plaza de los Santos Niños, donde la Catedral Magistral recuerda los orígenes religiosos de la ciudad medieval y la tradición del martirio de Justo y Pastor.",
-    curiosity: "El título de “Magistral” estaba relacionado con que sus canónigos fueran maestros universitarios.", source: "https://catedralmagistral.com/visita-cultural/"
+    curiosity: "El título de “Magistral” estaba relacionado con que sus canónigos fueran maestros universitarios.", source: "https://catedralmagistral.com/visita-cultural/", image: "images/catedral-magistral.webp", alt: "Fachada de la Catedral Magistral de Alcalá de Henares"
   },
   {
     id: 7, slug: "palacio-arzobispal", name: "Palacio Arzobispal", shortName: "Palacio Arzobispal", subtitle: "Plaza de las Bernardas · recinto amurallado",
     coordinates: { lat: 40.48244, lng: -3.36965 }, duration: "10–15 min", price: "Exterior gratuito",
     description: "Antigua residencia de los arzobispos de Toledo y uno de los grandes centros históricos de poder de Alcalá. La plaza marca la transición hacia la muralla.",
-    curiosity: "Un enorme incendio en 1939 destruyó parte de sus dependencias y archivos. El acceso interior puede variar.", source: "https://www.turismoalcala.es/turismo/palacio-arzobispal/"
+    curiosity: "Un enorme incendio en 1939 destruyó parte de sus dependencias y archivos. El acceso interior puede variar.", source: "https://www.turismoalcala.es/turismo/palacio-arzobispal/", image: "images/palacio-arzobispal.webp", alt: "Palacio Arzobispal junto al recinto amurallado"
   },
   {
     id: 8, slug: "puerta-de-madrid", name: "Puerta de Madrid", shortName: "Puerta de Madrid", subtitle: "Final · acceso occidental",
